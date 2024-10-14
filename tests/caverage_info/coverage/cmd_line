@@ -1,0 +1,1 @@
+genhtml coverage.info --output-directory ../tests/caverage_info/coverage

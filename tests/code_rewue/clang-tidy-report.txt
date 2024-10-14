@@ -1,0 +1,123 @@
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:6:10: error: 'functions.h' file not found [clang-diagnostic-error]
+#include "functions.h"
+         ^~~~~~~~~~~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:8:25: warning: 2 adjacent parameters of 'operation' of convertible types are easily swapped by mistake [bugprone-easily-swappable-parameters]
+int operation(int val1, int val2, char op)
+                        ^~~~~~~~~~~~~~~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:8:29: note: the first parameter in the range is 'val2'
+int operation(int val1, int val2, char op)
+                            ^~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:8:40: note: the last parameter in the range is 'op'
+int operation(int val1, int val2, char op)
+                                       ^~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:8:35: note: 'int' and 'char' may be implicitly converted
+int operation(int val1, int val2, char op)
+                                  ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:8:40: warning: parameter name 'op' is too short, expected at least 3 characters [readability-identifier-length]
+int operation(int val1, int val2, char op)
+                                       ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:10:5: warning: potential uncovered code path; add a default label [hicpp-multiway-paths-covered]
+    switch (op)
+    ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:28:22: warning: 2 adjacent parameters of 'calc_from_stack' of similar type ('int &') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+bool calc_from_stack(std::stack<int> &value, std::stack<char> &oper)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:28:39: note: the first parameter in the range is 'value'
+bool calc_from_stack(std::stack<int> &value, std::stack<char> &oper)
+                                      ^~~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:28:64: note: the last parameter in the range is 'oper'
+bool calc_from_stack(std::stack<int> &value, std::stack<char> &oper)
+                                                               ^~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:35:16: warning: variable name 'op' is too short, expected at least 3 characters [readability-identifier-length]
+    char const op = oper.top();
+               ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:48:27: warning: 2 adjacent parameters of 'calc_inside_brackets' of similar type ('int &') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+bool calc_inside_brackets(std::stack<int> &value, std::stack<char> &oper)
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:48:44: note: the first parameter in the range is 'value'
+bool calc_inside_brackets(std::stack<int> &value, std::stack<char> &oper)
+                                           ^~~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:48:69: note: the last parameter in the range is 'oper'
+bool calc_inside_brackets(std::stack<int> &value, std::stack<char> &oper)
+                                                                    ^~~~
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:50:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+    while (!oper.empty() && oper.top() != '(')
+    ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:66:6: warning: function 'evaluate' has cognitive complexity of 39 (threshold 25) [readability-function-cognitive-complexity]
+bool evaluate(const char *expression, int &result)
+     ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:75:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    while (*expression != 0)
+    ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:78:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if (*expression == ' ')
+        ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:85:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if (isdigit(*expression) != 0)
+        ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:88:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            while (isdigit(*expression) != 0)
+            ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:98:14: note: +1, nesting level increased to 2
+        else if (*expression == '(')
+             ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:106:14: note: +1, nesting level increased to 2
+        else if (*expression == ')')
+             ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:110:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if (parenthesis_count < 0)
+            ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:116:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(!calc_inside_brackets(value,oper))
+            ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:122:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if (!oper.empty())
+            ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:130:14: note: +1, nesting level increased to 2
+        else if (*expression == '/' || *expression == '*' || *expression == '+' || *expression == '-')
+             ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:130:81: note: +1
+        else if (*expression == '/' || *expression == '*' || *expression == '+' || *expression == '-')
+                                                                                ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:132:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if (*expression == '-' && expecting_number)
+            ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:132:36: note: +1
+            if (*expression == '-' && expecting_number)
+                                   ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:136:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+                while (isdigit(*expression) != 0)
+                ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:147:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(!calc_inside_brackets(value,oper))
+            ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:155:9: note: +1, nesting level increased to 2
+        else
+        ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:163:6: note: +1, including nesting penalty of 0, nesting level increased to 1
+     while (!oper.empty())
+     ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:165:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if (value.size() < 2)
+        ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:171:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if (!calc_from_stack(value, oper))
+        ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:178:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if (value.empty())
+    ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:88:13: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+            while (isdigit(*expression) != 0)
+            ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:90:36: warning: 10 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+                number = (number * 10) + (*expression - '0'); // from letters to numbers
+                                   ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:136:17: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+                while (isdigit(*expression) != 0)
+                ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:138:40: warning: 10 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+                    number = (number * 10) + (*expression - '0');
+                                       ^
+/home/civ/workspace/test/calculator/tests/code_rewue/../../src/functions.cpp:163:6: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+     while (!oper.empty())
+     ^

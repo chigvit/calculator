@@ -1,0 +1,518 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00       28     0.00     0.00  frame_dummy
+  0.00      0.00     0.00       26     0.00     0.00  evaluate(char const*, int&)
+  0.00      0.00     0.00       18     0.00     0.00  int const& std::forward<int const&>(std::remove_reference<int const&>::type&)
+  0.00      0.00     0.00       17     0.00     0.00  std::stack<int, std::deque<int, std::allocator<int> > >::pop()
+  0.00      0.00     0.00       16     0.00     0.00  std::__deque_buf_size(unsigned long)
+  0.00      0.00     0.00       11     0.00     0.00  std::deque<char, std::allocator<char> >::empty() const
+  0.00      0.00     0.00       11     0.00     0.00  std::stack<char, std::deque<char, std::allocator<char> > >::empty() const
+  0.00      0.00     0.00       10     0.00     0.00  std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long)
+  0.00      0.00     0.00       10     0.00     0.00  char const& std::forward<char const&>(std::remove_reference<char const&>::type&)
+  0.00      0.00     0.00        9     0.00     0.00  std::_Deque_iterator<char, char&, char*>::_Deque_iterator(std::_Deque_iterator<char, char&, char*> const&)
+  0.00      0.00     0.00        9     0.00     0.00  std::_Deque_iterator<int, int&, int*>::_Deque_iterator(std::_Deque_iterator<int, int&, int*> const&)
+  0.00      0.00     0.00        9     0.00     0.00  std::deque<char, std::allocator<char> >::end()
+  0.00      0.00     0.00        9     0.00     0.00  std::deque<char, std::allocator<char> >::back()
+  0.00      0.00     0.00        9     0.00     0.00  std::deque<int, std::allocator<int> >::end()
+  0.00      0.00     0.00        9     0.00     0.00  std::deque<int, std::allocator<int> >::back()
+  0.00      0.00     0.00        9     0.00     0.00  std::deque<int, std::allocator<int> >::push_back(int const&)
+  0.00      0.00     0.00        9     0.00     0.00  std::stack<char, std::deque<char, std::allocator<char> > >::top()
+  0.00      0.00     0.00        9     0.00     0.00  std::stack<int, std::deque<int, std::allocator<int> > >::top()
+  0.00      0.00     0.00        9     0.00     0.00  std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&)
+  0.00      0.00     0.00        8     0.00     0.00  std::deque<int, std::allocator<int> >::pop_back()
+  0.00      0.00     0.00        6     0.00     0.00  std::_Deque_iterator<int, int&, int*>::_S_buffer_size()
+  0.00      0.00     0.00        5     0.00     0.00  calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&)
+  0.00      0.00     0.00        5     0.00     0.00  std::deque<char, std::allocator<char> >::pop_back()
+  0.00      0.00     0.00        5     0.00     0.00  std::deque<char, std::allocator<char> >::push_back(char const&)
+  0.00      0.00     0.00        5     0.00     0.00  std::stack<char, std::deque<char, std::allocator<char> > >::pop()
+  0.00      0.00     0.00        5     0.00     0.00  std::stack<char, std::deque<char, std::allocator<char> > >::push(char const&)
+  0.00      0.00     0.00        4     0.00     0.00  calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&)
+  0.00      0.00     0.00        4     0.00     0.00  operation(int, int, char)
+  0.00      0.00     0.00        4     0.00     0.00  std::deque<int, std::allocator<int> >::size() const
+  0.00      0.00     0.00        4     0.00     0.00  std::stack<int, std::deque<int, std::allocator<int> > >::size() const
+  0.00      0.00     0.00        4     0.00     0.00  std::operator-(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Deque_iterator<char, char&, char*>::_M_set_node(char**)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Deque_iterator<char, char&, char*>::_S_buffer_size()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Deque_iterator<char, char&, char*>::_Deque_iterator()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Deque_iterator<int, int&, int*>::_M_set_node(int**)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Deque_iterator<int, int&, int*>::_Deque_iterator()
+  0.00      0.00     0.00        2     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.00     0.00        1     0.00     0.00  std::deque<int, std::allocator<int> >::empty() const
+  0.00      0.00     0.00        1     0.00     0.00  std::stack<int, std::deque<int, std::allocator<int> > >::empty() const
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<char, std::allocator<char> >::_Deque_impl::_Deque_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<char, std::allocator<char> >::_Deque_impl_data::_Deque_impl_data()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<char, std::allocator<char> >::_Deque_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<char, std::allocator<char> >::~_Deque_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<int, std::allocator<int> >::_Deque_impl::_Deque_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<int, std::allocator<int> >::_Deque_impl_data::_Deque_impl_data()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<int, std::allocator<int> >::_Deque_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Deque_base<int, std::allocator<int> >::~_Deque_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::deque<char, std::allocator<char> >::deque()
+  0.00      0.00     0.00        1     0.00     0.00  std::deque<char, std::allocator<char> >::~deque()
+  0.00      0.00     0.00        1     0.00     0.00  std::deque<int, std::allocator<int> >::deque()
+  0.00      0.00     0.00        1     0.00     0.00  std::deque<int, std::allocator<int> >::~deque()
+  0.00      0.00     0.00        1     0.00     0.00  std::stack<char, std::deque<char, std::allocator<char> > >::stack<std::deque<char, std::allocator<char> >, void>()
+  0.00      0.00     0.00        1     0.00     0.00  std::stack<char, std::deque<char, std::allocator<char> > >::~stack()
+  0.00      0.00     0.00        1     0.00     0.00  std::stack<int, std::deque<int, std::allocator<int> > >::stack<std::deque<int, std::allocator<int> >, void>()
+  0.00      0.00     0.00        1     0.00     0.00  std::stack<int, std::deque<int, std::allocator<int> > >::~stack()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+[1]      0.0    0.00    0.00      36+8       <cycle 1 as a whole> [1]
+                0.00    0.00      28+4           frame_dummy <cycle 1> [3]
+                0.00    0.00      16             std::__deque_buf_size(unsigned long) <cycle 1> [13]
+-----------------------------------------------
+[2]      0.0    0.00    0.00       1+34      <cycle 2 as a whole> [2]
+                0.00    0.00      26+5           evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       5             calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+                0.00    0.00       4             calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+-----------------------------------------------
+                                   4             frame_dummy <cycle 1> [3]
+                                   4             std::__deque_buf_size(unsigned long) <cycle 1> [13]
+                0.00    0.00       1/36          std::_Deque_base<int, std::allocator<int> >::~_Deque_base() [56]
+                0.00    0.00       1/36          std::_Deque_base<char, std::allocator<char> >::~_Deque_base() [51]
+                0.00    0.00       2/36          std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) [54]
+                0.00    0.00       2/36          std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long) [16]
+                0.00    0.00       4/36          evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       5/36          std::deque<char, std::allocator<char> >::push_back(char const&) [32]
+                0.00    0.00       9/36          std::deque<int, std::allocator<int> >::push_back(int const&) [24]
+[3]      0.0    0.00    0.00      28+4       frame_dummy <cycle 1> [3]
+                                   4             std::__deque_buf_size(unsigned long) <cycle 1> [13]
+                                   4             frame_dummy <cycle 1> [3]
+-----------------------------------------------
+                                   5             evaluate(char const*, int&) <cycle 2> [10]
+                                  12             calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+                                  13             calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+                0.00    0.00       1/1           main [8]
+[10]     0.0    0.00    0.00      26+5       evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       5/9           std::deque<int, std::allocator<int> >::push_back(int const&) [24]
+                0.00    0.00       5/9           std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&) [27]
+                0.00    0.00       5/5           std::deque<char, std::allocator<char> >::push_back(char const&) [32]
+                0.00    0.00       5/5           std::stack<char, std::deque<char, std::allocator<char> > >::push(char const&) [34]
+                0.00    0.00       4/36          frame_dummy <cycle 1> [3]
+                0.00    0.00       3/11          std::deque<char, std::allocator<char> >::empty() const [14]
+                0.00    0.00       3/11          std::stack<char, std::deque<char, std::allocator<char> > >::empty() const [15]
+                0.00    0.00       1/1           std::_Deque_base<char, std::allocator<char> >::_Deque_base() [50]
+                0.00    0.00       1/1           std::deque<char, std::allocator<char> >::deque() [57]
+                0.00    0.00       1/1           std::stack<char, std::deque<char, std::allocator<char> > >::stack<std::deque<char, std::allocator<char> >, void>() [61]
+                0.00    0.00       1/1           std::_Deque_base<int, std::allocator<int> >::_Deque_base() [55]
+                0.00    0.00       1/1           std::deque<int, std::allocator<int> >::deque() [59]
+                0.00    0.00       1/1           std::stack<int, std::deque<int, std::allocator<int> > >::stack<std::deque<int, std::allocator<int> >, void>() [63]
+                0.00    0.00       1/1           std::_Deque_base<int, std::allocator<int> >::~_Deque_base() [56]
+                0.00    0.00       1/1           std::deque<int, std::allocator<int> >::~deque() [60]
+                0.00    0.00       1/1           std::stack<int, std::deque<int, std::allocator<int> > >::~stack() [64]
+                0.00    0.00       1/1           std::_Deque_base<char, std::allocator<char> >::~_Deque_base() [51]
+                0.00    0.00       1/1           std::deque<char, std::allocator<char> >::~deque() [58]
+                0.00    0.00       1/1           std::stack<char, std::deque<char, std::allocator<char> > >::~stack() [62]
+                0.00    0.00       1/4           std::operator-(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) [39]
+                0.00    0.00       1/4           std::deque<int, std::allocator<int> >::size() const [37]
+                0.00    0.00       1/4           std::stack<int, std::deque<int, std::allocator<int> > >::size() const [38]
+                0.00    0.00       1/1           std::deque<int, std::allocator<int> >::empty() const [46]
+                0.00    0.00       1/1           std::stack<int, std::deque<int, std::allocator<int> > >::empty() const [47]
+                0.00    0.00       1/9           std::deque<int, std::allocator<int> >::back() [23]
+                0.00    0.00       1/9           std::stack<int, std::deque<int, std::allocator<int> > >::top() [26]
+                0.00    0.00       1/5           std::deque<char, std::allocator<char> >::pop_back() [31]
+                0.00    0.00       1/5           std::stack<char, std::deque<char, std::allocator<char> > >::pop() [33]
+                                   5             calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+                                   1             calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+                                   5             evaluate(char const*, int&) <cycle 2> [10]
+-----------------------------------------------
+                0.00    0.00      18/18          std::deque<int, std::allocator<int> >::push_back(int const&) [24]
+[11]     0.0    0.00    0.00      18         int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [11]
+-----------------------------------------------
+                0.00    0.00       8/17          calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+                0.00    0.00       9/17          std::deque<int, std::allocator<int> >::back() [23]
+[12]     0.0    0.00    0.00      17         std::stack<int, std::deque<int, std::allocator<int> > >::pop() [12]
+-----------------------------------------------
+                                   4             frame_dummy <cycle 1> [3]
+                0.00    0.00       2/36          std::_Deque_iterator<int, int&, int*>::_M_set_node(int**) [43]
+                0.00    0.00       2/36          std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) [54]
+                0.00    0.00       2/36          std::_Deque_iterator<char, char&, char*>::_M_set_node(char**) [40]
+                0.00    0.00       2/36          std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long) [16]
+                0.00    0.00       4/36          std::operator-(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) [39]
+[13]     0.0    0.00    0.00      16         std::__deque_buf_size(unsigned long) <cycle 1> [13]
+                                   4             frame_dummy <cycle 1> [3]
+-----------------------------------------------
+                0.00    0.00       3/11          evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       8/11          calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+[14]     0.0    0.00    0.00      11         std::deque<char, std::allocator<char> >::empty() const [14]
+-----------------------------------------------
+                0.00    0.00       3/11          evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       8/11          calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+[15]     0.0    0.00    0.00      11         std::stack<char, std::deque<char, std::allocator<char> > >::empty() const [15]
+-----------------------------------------------
+                0.00    0.00       1/10          std::_Deque_base<char, std::allocator<char> >::_Deque_base() [50]
+                0.00    0.00       9/10          std::deque<char, std::allocator<char> >::back() [21]
+[16]     0.0    0.00    0.00      10         std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long) [16]
+                0.00    0.00       2/36          std::__deque_buf_size(unsigned long) <cycle 1> [13]
+                0.00    0.00       2/36          frame_dummy <cycle 1> [3]
+                0.00    0.00       2/2           std::_Deque_iterator<char, char&, char*>::_M_set_node(char**) [40]
+                0.00    0.00       1/2           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [45]
+-----------------------------------------------
+                0.00    0.00      10/10          std::deque<char, std::allocator<char> >::push_back(char const&) [32]
+[17]     0.0    0.00    0.00      10         char const& std::forward<char const&>(std::remove_reference<char const&>::type&) [17]
+-----------------------------------------------
+                0.00    0.00       9/9           std::deque<char, std::allocator<char> >::end() [20]
+[18]     0.0    0.00    0.00       9         std::_Deque_iterator<char, char&, char*>::_Deque_iterator(std::_Deque_iterator<char, char&, char*> const&) [18]
+-----------------------------------------------
+                0.00    0.00       9/9           std::deque<int, std::allocator<int> >::end() [22]
+[19]     0.0    0.00    0.00       9         std::_Deque_iterator<int, int&, int*>::_Deque_iterator(std::_Deque_iterator<int, int&, int*> const&) [19]
+-----------------------------------------------
+                0.00    0.00       9/9           std::deque<char, std::allocator<char> >::back() [21]
+[20]     0.0    0.00    0.00       9         std::deque<char, std::allocator<char> >::end() [20]
+                0.00    0.00       9/9           std::_Deque_iterator<char, char&, char*>::_Deque_iterator(std::_Deque_iterator<char, char&, char*> const&) [18]
+-----------------------------------------------
+                0.00    0.00       4/9           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+                0.00    0.00       5/9           calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+[21]     0.0    0.00    0.00       9         std::deque<char, std::allocator<char> >::back() [21]
+                0.00    0.00       9/9           std::deque<char, std::allocator<char> >::end() [20]
+                0.00    0.00       9/10          std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long) [16]
+-----------------------------------------------
+                0.00    0.00       9/9           std::deque<int, std::allocator<int> >::back() [23]
+[22]     0.0    0.00    0.00       9         std::deque<int, std::allocator<int> >::end() [22]
+                0.00    0.00       9/9           std::_Deque_iterator<int, int&, int*>::_Deque_iterator(std::_Deque_iterator<int, int&, int*> const&) [19]
+-----------------------------------------------
+                0.00    0.00       1/9           evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       8/9           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+[23]     0.0    0.00    0.00       9         std::deque<int, std::allocator<int> >::back() [23]
+                0.00    0.00       9/9           std::deque<int, std::allocator<int> >::end() [22]
+                0.00    0.00       9/17          std::stack<int, std::deque<int, std::allocator<int> > >::pop() [12]
+-----------------------------------------------
+                0.00    0.00       4/9           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+                0.00    0.00       5/9           evaluate(char const*, int&) <cycle 2> [10]
+[24]     0.0    0.00    0.00       9         std::deque<int, std::allocator<int> >::push_back(int const&) [24]
+                0.00    0.00      18/18          int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [11]
+                0.00    0.00       9/36          frame_dummy <cycle 1> [3]
+-----------------------------------------------
+                0.00    0.00       4/9           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+                0.00    0.00       5/9           calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+[25]     0.0    0.00    0.00       9         std::stack<char, std::deque<char, std::allocator<char> > >::top() [25]
+-----------------------------------------------
+                0.00    0.00       1/9           evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       8/9           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+[26]     0.0    0.00    0.00       9         std::stack<int, std::deque<int, std::allocator<int> > >::top() [26]
+-----------------------------------------------
+                0.00    0.00       4/9           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+                0.00    0.00       5/9           evaluate(char const*, int&) <cycle 2> [10]
+[27]     0.0    0.00    0.00       9         std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&) [27]
+-----------------------------------------------
+                0.00    0.00       8/8           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+[28]     0.0    0.00    0.00       8         std::deque<int, std::allocator<int> >::pop_back() [28]
+-----------------------------------------------
+                0.00    0.00       2/6           std::_Deque_iterator<int, int&, int*>::_M_set_node(int**) [43]
+                0.00    0.00       4/6           std::operator-(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) [39]
+[29]     0.0    0.00    0.00       6         std::_Deque_iterator<int, int&, int*>::_S_buffer_size() [29]
+-----------------------------------------------
+                                   5             evaluate(char const*, int&) <cycle 2> [10]
+[30]     0.0    0.00    0.00       5         calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+                0.00    0.00       8/11          std::deque<char, std::allocator<char> >::empty() const [14]
+                0.00    0.00       8/11          std::stack<char, std::deque<char, std::allocator<char> > >::empty() const [15]
+                0.00    0.00       5/9           std::deque<char, std::allocator<char> >::back() [21]
+                0.00    0.00       5/9           std::stack<char, std::deque<char, std::allocator<char> > >::top() [25]
+                0.00    0.00       3/4           std::operator-(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) [39]
+                0.00    0.00       3/4           std::deque<int, std::allocator<int> >::size() const [37]
+                0.00    0.00       3/4           std::stack<int, std::deque<int, std::allocator<int> > >::size() const [38]
+                                  13             evaluate(char const*, int&) <cycle 2> [10]
+                                   3             calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+-----------------------------------------------
+                0.00    0.00       1/5           evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       4/5           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+[31]     0.0    0.00    0.00       5         std::deque<char, std::allocator<char> >::pop_back() [31]
+-----------------------------------------------
+                0.00    0.00       5/5           evaluate(char const*, int&) <cycle 2> [10]
+[32]     0.0    0.00    0.00       5         std::deque<char, std::allocator<char> >::push_back(char const&) [32]
+                0.00    0.00      10/10          char const& std::forward<char const&>(std::remove_reference<char const&>::type&) [17]
+                0.00    0.00       5/36          frame_dummy <cycle 1> [3]
+-----------------------------------------------
+                0.00    0.00       1/5           evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       4/5           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+[33]     0.0    0.00    0.00       5         std::stack<char, std::deque<char, std::allocator<char> > >::pop() [33]
+-----------------------------------------------
+                0.00    0.00       5/5           evaluate(char const*, int&) <cycle 2> [10]
+[34]     0.0    0.00    0.00       5         std::stack<char, std::deque<char, std::allocator<char> > >::push(char const&) [34]
+-----------------------------------------------
+                                   1             evaluate(char const*, int&) <cycle 2> [10]
+                                   3             calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+[35]     0.0    0.00    0.00       4         calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+                0.00    0.00       8/8           std::deque<int, std::allocator<int> >::pop_back() [28]
+                0.00    0.00       8/17          std::stack<int, std::deque<int, std::allocator<int> > >::pop() [12]
+                0.00    0.00       8/9           std::deque<int, std::allocator<int> >::back() [23]
+                0.00    0.00       8/9           std::stack<int, std::deque<int, std::allocator<int> > >::top() [26]
+                0.00    0.00       4/9           std::deque<char, std::allocator<char> >::back() [21]
+                0.00    0.00       4/9           std::stack<char, std::deque<char, std::allocator<char> > >::top() [25]
+                0.00    0.00       4/5           std::deque<char, std::allocator<char> >::pop_back() [31]
+                0.00    0.00       4/5           std::stack<char, std::deque<char, std::allocator<char> > >::pop() [33]
+                0.00    0.00       4/4           operation(int, int, char) [36]
+                0.00    0.00       4/9           std::deque<int, std::allocator<int> >::push_back(int const&) [24]
+                0.00    0.00       4/9           std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&) [27]
+                                  12             evaluate(char const*, int&) <cycle 2> [10]
+-----------------------------------------------
+                0.00    0.00       4/4           calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [35]
+[36]     0.0    0.00    0.00       4         operation(int, int, char) [36]
+-----------------------------------------------
+                0.00    0.00       1/4           evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       3/4           calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+[37]     0.0    0.00    0.00       4         std::deque<int, std::allocator<int> >::size() const [37]
+-----------------------------------------------
+                0.00    0.00       1/4           evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       3/4           calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+[38]     0.0    0.00    0.00       4         std::stack<int, std::deque<int, std::allocator<int> > >::size() const [38]
+-----------------------------------------------
+                0.00    0.00       1/4           evaluate(char const*, int&) <cycle 2> [10]
+                0.00    0.00       3/4           calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) <cycle 2> [30]
+[39]     0.0    0.00    0.00       4         std::operator-(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&) [39]
+                0.00    0.00       4/36          std::__deque_buf_size(unsigned long) <cycle 1> [13]
+                0.00    0.00       4/6           std::_Deque_iterator<int, int&, int*>::_S_buffer_size() [29]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long) [16]
+[40]     0.0    0.00    0.00       2         std::_Deque_iterator<char, char&, char*>::_M_set_node(char**) [40]
+                0.00    0.00       2/36          std::__deque_buf_size(unsigned long) <cycle 1> [13]
+                0.00    0.00       2/2           std::_Deque_iterator<char, char&, char*>::_S_buffer_size() [41]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Deque_iterator<char, char&, char*>::_M_set_node(char**) [40]
+[41]     0.0    0.00    0.00       2         std::_Deque_iterator<char, char&, char*>::_S_buffer_size() [41]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Deque_base<char, std::allocator<char> >::_Deque_impl_data::_Deque_impl_data() [49]
+                0.00    0.00       1/2           std::_Deque_base<char, std::allocator<char> >::_Deque_base() [50]
+[42]     0.0    0.00    0.00       2         std::_Deque_iterator<char, char&, char*>::_Deque_iterator() [42]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) [54]
+[43]     0.0    0.00    0.00       2         std::_Deque_iterator<int, int&, int*>::_M_set_node(int**) [43]
+                0.00    0.00       2/36          std::__deque_buf_size(unsigned long) <cycle 1> [13]
+                0.00    0.00       2/6           std::_Deque_iterator<int, int&, int*>::_S_buffer_size() [29]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Deque_base<int, std::allocator<int> >::_Deque_impl_data::_Deque_impl_data() [53]
+                0.00    0.00       1/2           std::_Deque_base<int, std::allocator<int> >::_Deque_base() [55]
+[44]     0.0    0.00    0.00       2         std::_Deque_iterator<int, int&, int*>::_Deque_iterator() [44]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) [54]
+                0.00    0.00       1/2           std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long) [16]
+[45]     0.0    0.00    0.00       2         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[46]     0.0    0.00    0.00       1         std::deque<int, std::allocator<int> >::empty() const [46]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[47]     0.0    0.00    0.00       1         std::stack<int, std::deque<int, std::allocator<int> > >::empty() const [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<char, std::allocator<char> >::_Deque_base() [50]
+[48]     0.0    0.00    0.00       1         std::_Deque_base<char, std::allocator<char> >::_Deque_impl::_Deque_impl() [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<char, std::allocator<char> >::_Deque_base() [50]
+[49]     0.0    0.00    0.00       1         std::_Deque_base<char, std::allocator<char> >::_Deque_impl_data::_Deque_impl_data() [49]
+                0.00    0.00       1/2           std::_Deque_iterator<char, char&, char*>::_Deque_iterator() [42]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[50]     0.0    0.00    0.00       1         std::_Deque_base<char, std::allocator<char> >::_Deque_base() [50]
+                0.00    0.00       1/2           std::_Deque_iterator<char, char&, char*>::_Deque_iterator() [42]
+                0.00    0.00       1/1           std::_Deque_base<char, std::allocator<char> >::_Deque_impl_data::_Deque_impl_data() [49]
+                0.00    0.00       1/1           std::_Deque_base<char, std::allocator<char> >::_Deque_impl::_Deque_impl() [48]
+                0.00    0.00       1/10          std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long) [16]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[51]     0.0    0.00    0.00       1         std::_Deque_base<char, std::allocator<char> >::~_Deque_base() [51]
+                0.00    0.00       1/36          frame_dummy <cycle 1> [3]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<int, std::allocator<int> >::_Deque_base() [55]
+[52]     0.0    0.00    0.00       1         std::_Deque_base<int, std::allocator<int> >::_Deque_impl::_Deque_impl() [52]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<int, std::allocator<int> >::_Deque_base() [55]
+[53]     0.0    0.00    0.00       1         std::_Deque_base<int, std::allocator<int> >::_Deque_impl_data::_Deque_impl_data() [53]
+                0.00    0.00       1/2           std::_Deque_iterator<int, int&, int*>::_Deque_iterator() [44]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Deque_base<int, std::allocator<int> >::_Deque_base() [55]
+[54]     0.0    0.00    0.00       1         std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) [54]
+                0.00    0.00       2/36          std::__deque_buf_size(unsigned long) <cycle 1> [13]
+                0.00    0.00       2/36          frame_dummy <cycle 1> [3]
+                0.00    0.00       2/2           std::_Deque_iterator<int, int&, int*>::_M_set_node(int**) [43]
+                0.00    0.00       1/2           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[55]     0.0    0.00    0.00       1         std::_Deque_base<int, std::allocator<int> >::_Deque_base() [55]
+                0.00    0.00       1/2           std::_Deque_iterator<int, int&, int*>::_Deque_iterator() [44]
+                0.00    0.00       1/1           std::_Deque_base<int, std::allocator<int> >::_Deque_impl_data::_Deque_impl_data() [53]
+                0.00    0.00       1/1           std::_Deque_base<int, std::allocator<int> >::_Deque_impl::_Deque_impl() [52]
+                0.00    0.00       1/1           std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[56]     0.0    0.00    0.00       1         std::_Deque_base<int, std::allocator<int> >::~_Deque_base() [56]
+                0.00    0.00       1/36          frame_dummy <cycle 1> [3]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[57]     0.0    0.00    0.00       1         std::deque<char, std::allocator<char> >::deque() [57]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[58]     0.0    0.00    0.00       1         std::deque<char, std::allocator<char> >::~deque() [58]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[59]     0.0    0.00    0.00       1         std::deque<int, std::allocator<int> >::deque() [59]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[60]     0.0    0.00    0.00       1         std::deque<int, std::allocator<int> >::~deque() [60]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[61]     0.0    0.00    0.00       1         std::stack<char, std::deque<char, std::allocator<char> > >::stack<std::deque<char, std::allocator<char> >, void>() [61]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[62]     0.0    0.00    0.00       1         std::stack<char, std::deque<char, std::allocator<char> > >::~stack() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[63]     0.0    0.00    0.00       1         std::stack<int, std::deque<int, std::allocator<int> > >::stack<std::deque<int, std::allocator<int> >, void>() [63]
+-----------------------------------------------
+                0.00    0.00       1/1           evaluate(char const*, int&) <cycle 2> [10]
+[64]     0.0    0.00    0.00       1         std::stack<int, std::deque<int, std::allocator<int> > >::~stack() [64]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [35] calc_from_stack(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) [40] std::_Deque_iterator<char, char&, char*>::_M_set_node(char**) [33] std::stack<char, std::deque<char, std::allocator<char> > >::pop()
+  [30] calc_inside_brackets(std::stack<int, std::deque<int, std::allocator<int> > >&, std::stack<char, std::deque<char, std::allocator<char> > >&) [41] std::_Deque_iterator<char, char&, char*>::_S_buffer_size() [25] std::stack<char, std::deque<char, std::allocator<char> > >::top()
+  [10] evaluate(char const*, int&)         [18] std::_Deque_iterator<char, char&, char*>::_Deque_iterator(std::_Deque_iterator<char, char&, char*> const&) [34] std::stack<char, std::deque<char, std::allocator<char> > >::push(char const&)
+  [36] operation(int, int, char)           [42] std::_Deque_iterator<char, char&, char*>::_Deque_iterator() [61] std::stack<char, std::deque<char, std::allocator<char> > >::stack<std::deque<char, std::allocator<char> >, void>()
+  [14] std::deque<char, std::allocator<char> >::empty() const [43] std::_Deque_iterator<int, int&, int*>::_M_set_node(int**) [62] std::stack<char, std::deque<char, std::allocator<char> > >::~stack()
+  [37] std::deque<int, std::allocator<int> >::size() const [29] std::_Deque_iterator<int, int&, int*>::_S_buffer_size() [12] std::stack<int, std::deque<int, std::allocator<int> > >::pop()
+  [46] std::deque<int, std::allocator<int> >::empty() const [19] std::_Deque_iterator<int, int&, int*>::_Deque_iterator(std::_Deque_iterator<int, int&, int*> const&) [26] std::stack<int, std::deque<int, std::allocator<int> > >::top()
+  [15] std::stack<char, std::deque<char, std::allocator<char> > >::empty() const [44] std::_Deque_iterator<int, int&, int*>::_Deque_iterator() [27] std::stack<int, std::deque<int, std::allocator<int> > >::push(int const&)
+  [38] std::stack<int, std::deque<int, std::allocator<int> > >::size() const [20] std::deque<char, std::allocator<char> >::end() [63] std::stack<int, std::deque<int, std::allocator<int> > >::stack<std::deque<int, std::allocator<int> >, void>()
+  [47] std::stack<int, std::deque<int, std::allocator<int> > >::empty() const [21] std::deque<char, std::allocator<char> >::back() [64] std::stack<int, std::deque<int, std::allocator<int> > >::~stack()
+  [48] std::_Deque_base<char, std::allocator<char> >::_Deque_impl::_Deque_impl() [31] std::deque<char, std::allocator<char> >::pop_back() [13] std::__deque_buf_size(unsigned long)
+  [49] std::_Deque_base<char, std::allocator<char> >::_Deque_impl_data::_Deque_impl_data() [32] std::deque<char, std::allocator<char> >::push_back(char const&) [45] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [16] std::_Deque_base<char, std::allocator<char> >::_M_initialize_map(unsigned long) [57] std::deque<char, std::allocator<char> >::deque() [17] char const& std::forward<char const&>(std::remove_reference<char const&>::type&)
+  [50] std::_Deque_base<char, std::allocator<char> >::_Deque_base() [58] std::deque<char, std::allocator<char> >::~deque() [11] int const& std::forward<int const&>(std::remove_reference<int const&>::type&)
+  [51] std::_Deque_base<char, std::allocator<char> >::~_Deque_base() [22] std::deque<int, std::allocator<int> >::end() [39] std::operator-(std::_Deque_iterator<int, int&, int*> const&, std::_Deque_iterator<int, int&, int*> const&)
+  [52] std::_Deque_base<int, std::allocator<int> >::_Deque_impl::_Deque_impl() [23] std::deque<int, std::allocator<int> >::back() [3] frame_dummy
+  [53] std::_Deque_base<int, std::allocator<int> >::_Deque_impl_data::_Deque_impl_data() [28] std::deque<int, std::allocator<int> >::pop_back() [1] <cycle 1>
+  [54] std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) [24] std::deque<int, std::allocator<int> >::push_back(int const&) [2] <cycle 2>
+  [55] std::_Deque_base<int, std::allocator<int> >::_Deque_base() [59] std::deque<int, std::allocator<int> >::deque()
+  [56] std::_Deque_base<int, std::allocator<int> >::~_Deque_base() [60] std::deque<int, std::allocator<int> >::~deque()
