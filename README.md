@@ -10,35 +10,26 @@ This project implements a calculator that evaluates mathematical expressions. Th
 
 ```
 calculator/
-├── include/           # Header files
-│   └── functions.h    # Function declarations
-├── src/               # Source files
-│   ├── main.cpp       # Main function
-│   └── functions.cpp  # Function implementations
-├── build/             # Build directory (created during compilation)
-├── tests/             # Tests and profiling tools
-│   ├── callgrind/     # Callgrind output files
-        └─ callgrind.sh       # Script for profiling with valgrind callgrind
-│   ├── code_review/   # Clang-tidy static analysis
-        └── clang-tidy.sh
-│   ├── gprof/         # gprof profiling output
-    ├── coverage_info/
-            lcav.sh
-│   └── gtest/         # Unit tests
-├── CMakeLists.txt     # CMake configuration file
-├── gprof_gen.sh       # Script for compiling and profiling with gprof
-
-```
-
-│   ├── callgrind/     # Callgrind profiling
-│   │   └── callgrind.sh
-│   ├── code_review/   # Static analysis and code coverage
-│   │   ├── clang-tidy.sh
-│   │   └── lcov.sh
-│   ├── gprof/         # gprof profiling
-│   │   └── gprof_gen.sh
-│   ├── gtest/         # Unit tests
+├── include/              # Header files
+│   └── functions.h       # Function declarations
+├── src/                  # Source files
+│   ├── main.cpp          # Main function
+│   └── functions.cpp     # Function implementations
+├── build/                # Build directory (created during compilation)
+├── tests/                # Tests and profiling tools
+│   ├── callgrind/        # Callgrind output files profiling
+│   │   └─ callgrind.sh   # Script for profiling with valgrind callgrind
+│   ├── code_review/      # Static analysis and code coverage Clang-tidy
+│   │   └── clang-tidy.sh
+│   ├── gprof/            # gprof profiling output
+│   │   └── gprof_gen.sh  # Script for compiling and profiling with gprof
+│   ├── coverage_info/    # Main directory for coverage information
+│   │   ├── coverage/     # Subdirectory for storing coverage data (e.g., reports, coverage files)
+│   │   └── lcav.sh       # Shell script (possibly for generating or cleaning coverage data)
+│   ├── gtest/            # Unit tests
 │   │   └── utest_evaluate.cpp
+└── CMakeLists.txt        # CMake configuration file
+```
 
 ## Requirements
 
@@ -48,7 +39,9 @@ To build and profile the project, ensure that the following software is installe
 - CMake >= 3.10
 - Valgrind >= 3.14
 - gprof
+- lcov
 - clang-tidy
+- kcachegrind 
 
 On Debian-based systems (Ubuntu, Kali Linux), you can install these packages with:
 
@@ -67,7 +60,15 @@ sudo apt install g++ cmake valgrind gprof clang-tidy
 
 2. Run CMake to configure the project:
    ```bash
-   cmake -DBUILD_GPROF=ON ..
+   cmake ..
+   ```
+    For gprof
+   ```bash
+   cmake -BUILD_GPROF=ON ..
+   ```
+   For lcov
+   ```bash
+   cmake -CODE_COVERAGE=ON ..
    ```
 
 3. Compile the project:
