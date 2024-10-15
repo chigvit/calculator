@@ -38,7 +38,7 @@ To build and profile the project, ensure that the following software is installe
 - GCC (g++) >= 7.0
 - CMake >= 3.10
 - Valgrind >= 3.14
-- gprof
+- binutils
 - lcov
 - clang-tidy
 - kcachegrind 
@@ -47,7 +47,7 @@ On Debian-based systems (Ubuntu, Kali Linux), you can install these packages wit
 
 ```bash
 sudo apt update
-sudo apt install g++ cmake valgrind gprof clang-tidy
+sudo apt install g++ cmake valgrind binutils clang-tidy
 ```
 
 ## Build Instructions
