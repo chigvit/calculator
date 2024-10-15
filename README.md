@@ -116,8 +116,13 @@ To perform static code analysis using `clang-tidy`:
 ### Code Coverage
 
 To generate code coverage reports:
+1. Build the project with code coverage enabled:
+   ```bash
+   cmake -DCODE_COVERAGE=ON ..
+   make
+   ```
 
-1. Run the following script for code coverage analysis:
+2. Run the following script for code coverage analysis:
    ```bash
    ../tests/code_review/lcov.sh
    ```
@@ -128,13 +133,7 @@ To generate code coverage reports:
 
 Unit tests for the calculator are located in the `tests/gtest` directory. To execute the tests, follow these steps:
 
-1. Build the project with code coverage enabled:
-   ```bash
-   cmake -DCODE_COVERAGE=ON ..
-   make
-   ```
-
-2. Run the unit tests:
+1. Run the unit tests:
    ```bash
    ./utest_evaluate
    ```
