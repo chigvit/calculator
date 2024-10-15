@@ -1,7 +1,3 @@
-Ось оновлений README, що включає опис папки `tests`:
-
----
-
 # Calculator Project
 
 This project implements a calculator that evaluates mathematical expressions. The project includes profiling support using `gprof`, `valgrind`, and code coverage analysis. It also provides static code analysis using `clang-tidy`.
@@ -77,7 +73,7 @@ sudo apt install g++ cmake valgrind binutils clang-tidy
    ```
 4. Run:
    ```bash
-   cakculator "1+2*(3+7)
+   ./cakculator "1+2*(3+7)"
    ```
 
 This will generate an executable named `calculator` in the `build` directory.
