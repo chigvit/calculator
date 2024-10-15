@@ -75,6 +75,10 @@ sudo apt install g++ cmake valgrind binutils clang-tidy
    ```bash
    make
    ```
+4. Run:
+   ```bash
+   cakculator "1+2*(3+7)
+   ```
 
 This will generate an executable named `calculator` in the `build` directory.
 
