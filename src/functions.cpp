@@ -21,12 +21,18 @@ int operation(int val1, int val2, char op)
             throw std::runtime_error("Division by zero!");
         }
         return val1 / val2;
+    default:
+        throw std::runtime_error("Invalid operation!");
     }
-    throw std::runtime_error("Invalid operation!");
 }
 
 bool calc_from_stack(std::stack<int> &value, std::stack<char> &oper)
 {
+    if (value.size() < 2)
+    {
+        std::cerr << "Error: insufficient values for calculation.\n";
+        return false;
+    }
 
     int const val2 = value.top();
     value.pop();
@@ -34,6 +40,7 @@ bool calc_from_stack(std::stack<int> &value, std::stack<char> &oper)
     value.pop();
     char const op = oper.top();
     oper.pop();
+
     if (op == '(')
     {
         std::cerr << "Extra opening parenthesis found!" << std::endl;
@@ -42,6 +49,7 @@ bool calc_from_stack(std::stack<int> &value, std::stack<char> &oper)
     const int calc_result = operation(val1, val2, op);
     std::cout << "Calculate: " << val1 << " " << op << " " << val2 << " = " << calc_result << std::endl;
     value.push(calc_result);
+
     return true;
 }
 
@@ -49,12 +57,6 @@ bool calc_inside_brackets(std::stack<int> &value, std::stack<char> &oper)
 {
     while (!oper.empty() && oper.top() != '(')
     {
-        if (value.size() < 2)
-        {
-            std::cerr << "Insufficient values for operation" << std::endl;
-            return false;
-        }
-
         if (!calc_from_stack(value, oper))
         {
             return false;
@@ -63,6 +65,7 @@ bool calc_inside_brackets(std::stack<int> &value, std::stack<char> &oper)
     return true;
 }
 
+// Функція, яка виконує обчислення з урахуванням пріоритетів
 bool evaluate(const char *expression, int &result)
 {
 
@@ -148,6 +151,7 @@ bool evaluate(const char *expression, int &result)
             {
                 return false;
             }
+           
             oper.push(*expression);
             expression++;
             expecting_number = true;
@@ -162,26 +166,20 @@ bool evaluate(const char *expression, int &result)
     // Complete left operations
     while (!oper.empty())
     {
-        if (value.size() < 2)
-        {
-            std::cerr << "Insufficient values for operation" << std::endl;
-            return false;
-        }
-
         if (!calc_from_stack(value, oper))
         {
             return false;
         }
     }
 
-    // Ensure there is a result to return
-    if (value.empty())
+    // Перевіряємо, що стек правильно містить результат
+    if (value.size() == 1)
     {
-        std::cerr << "Error: No result found!" << std::endl;
-        return false;
+        result = value.top();
+        return true;
     }
 
-    // Result
-    result = value.top();
-    return true;
+    std::cerr << "Error: incorrect final result stack state.\n";
+    return false;
 }
+
